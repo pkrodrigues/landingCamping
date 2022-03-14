@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #419658;
+}
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background);
+  color: var(--text-base);
+  display: flex;
+}
+
+span.logo img{
+  margin: 40px;
+}
+.container{
+  width: 50%;
+  height: auto;
+  flex-basis: 50%;
+}
+.container .container_form{
+  min-width: 350px;
+  background-color: var(--form-background);
+  margin: auto 15%;
+  padding: 8%;
+  border-radius: 4px;
+}
+
+.container .container_form div {
+  margin: 10px;
+}
+
+.container .container_form div img {
+  background-position: 0;
+}
+.container .container_form div h3 {
+  color: var(--text-title);
+  display: inline-block;
+  text-align: auto;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container .container_form div p {
+  margin-bottom: 10px;
+}
+
+.container .container_form label:nth-child(-n+1) {
+  display: block;
+  margin-bottom: 10px;
+}
+.container .container_form form input {
+  background-color: var(--form-background);
+  border:solid #ccc;
+  border-radius: 4px;
+  color: var(--text-base)
+}
+.container .container_form form input[type=email],input[type=password]{
+  margin-bottom: 15px;
+  padding: 10px 0px 10px 10%;
+  width: 280px;
+  font-size: 1rem;
+}
+
+.container .container_form form input[type=email]{
+  background: url(/images/mail.svg) no-repeat;
+  background-position: 3%;
+}
+.container .container_form form input[type=password]{
+  background: url(/images/lock.svg) no-repeat 3%, url(/images/eye.svg) no-repeat 96% ;
+  /* background-position: 5px; */
+}
+
+.container .container_form form input:focus {
+  outline-color: var(--primary-color);
+}
+
+.container .container_form form input[type=email]:focus{
+  background: url(/images/mail-focus.svg) no-repeat 3%;
+}
+.container .container_form form input[type=password]:focus{
+  background: url(/images/lock-focus.svg) no-repeat 3%;
+}
+form .recupere {
+  width: 100%;
+}
+
+form .recupere a{
+  text-decoration: none;
+  color: var(--primary-color);
+  margin-left: 18%;
+}
+.container .container_form form input:checked ~ .check{
+  background: var(--primary-color);
+  border: 1px solid #ccc; 
+}
+.container_form form .buttonLogar {
+  margin: 3%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  width: 305px;
+  height: 35px;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  color: var(--text-title);
+}
+
+.container_form form .buttonLogar:hover{
+  opacity: 0.8;
+  transition-duration: 1.5s;
+}
+form a.regis {
+  position: relative;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+/* .container .container_form form input[type=checkbox]:checked{
+  background-color: #419658;
+} */
+.container-two {
+  flex: 1;
+  max-width: 50vw;
+}
+
+.container-two img {
+  width: 100%;
+  height: 100vh;
+}
